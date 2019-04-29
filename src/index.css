@@ -1,3 +1,7 @@
+html {
+  min-height: 100%
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +10,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(/img/team-bg.jpg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #044B80;
+  min-height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+form {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button, form h5 {
+  margin: 20px 20px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-text-area:focus:not([readonly]){
+  border-color: #0481A8;
+  box-shadow: none;
 }
